@@ -1,0 +1,19 @@
+// 引用 google font 字體
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+@import "../icofont/icofont.min.css";
+
+@import "../../node_modules/bootstrap/scss/functions";
+// 全站設定重設
+@import './utils/reset';
+// 客製化顏色
+@import './utils/variables';
+
+
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
+
+@import "../../node_modules/bootstrap";
