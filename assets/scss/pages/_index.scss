@@ -1,21 +1,27 @@
 .banner-bg{
-  padding: 48px 48px 24px 48px;
+  padding: 16px 40px 24px 40px;
   background-image: url('../../../assets/images/event/13.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 518px;
+  height: 350px;
+  @media(min-width:768px){
+    padding: 48px 48px 24px 48px;
+    height: 518px;
+  }
 }
 
 // 探索更多
-.explore{
-  .item{
-    width: 196px;
-    height: 196px;
-  }
+.header-catalog{
+  height: 196px;
+  border:2px solid #030303;
   img{
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
+    @media(min-width:768px){
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
@@ -30,7 +36,7 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url('../../images/sparkler.png');
+    background-image: url('/assets/images/sparkler.png');
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -43,3 +49,27 @@
       height: 317px;
     }
 }
+
+//活動錦集
+.activity{
+  li{
+    &:nth-child(2n) {
+      transform:rotate(2deg)
+    }
+    &:nth-child(3) {
+      transform: rotate(-2deg);
+    }
+  }
+
+  img{
+    height: 274px;
+    object-fit: cover;
+  }
+}
+  
+.label{
+  padding: 10px 16px 10px 16px;
+  transform: rotate(-4deg) !important;
+}
+
+

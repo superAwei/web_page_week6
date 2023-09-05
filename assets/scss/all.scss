@@ -8,6 +8,13 @@
 @import './utils/reset';
 // 客製化顏色
 @import './utils/variables';
+// 客製化字體
+@import './utils/font';
+// 客製化標籤元件
+@import './components/tag';
+@import './components/marquee';
+
+
 
 
 @import './layout/header.scss';
